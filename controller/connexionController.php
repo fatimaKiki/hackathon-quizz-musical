@@ -2,11 +2,11 @@
 include("models/User.php");
 include("models/Asbl.php");
 $msg = "";
-if (isset($_POST["email"], $_POST["motDePasse_connexion"])) {
+if (isset($_POST["nom"])) {
     // var_dump("couco");
     $connexionUser = new User();
 
-    $user = $connexionUser->verify(htmlspecialchars($_POST['email']), htmlspecialchars($_POST['motDePasse_connexion']));
+    $user = $connexionUser->verify(htmlspecialchars($_POST['nom']));
 
     if ($user != false) {
         $_SESSION["user"] = $user;

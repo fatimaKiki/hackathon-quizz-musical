@@ -3,8 +3,11 @@ session_start();
 ob_start();
 if (isset($_SESSION)) {
 
-    // var_dump($_SESSION);
+    
 }
+
+var_dump($_SESSION["id"]);
+
 // inclure le head
 include("views/html/head.php");
 

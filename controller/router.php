@@ -11,8 +11,8 @@ if (isset($_GET["section"])) {
         case 'evenements':
             include("controller/evenementsController.php");
             break;
-        case 'carte_de_Bruxelles':
-            include("controller/carte_de_BruxellesController.php");
+        case 'erreur':
+            include("controller/erreurController.php");
             break;
         case 'connexion':
             include("controller/connexionController.php");

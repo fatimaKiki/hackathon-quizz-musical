@@ -37,7 +37,7 @@ abstract class Connection {
         // xampp : '' // pas de mdp /!\ production
         // mamp : 'root'
         // production : lorsque vous mettrez en ligne votre site vous recevrez de votre fournisseur les données 2, 5, 6
-        self::$_connection = new PDO("mysql:host=localhost;dbname=solidariteeconnectee;charset=utf8", 'root', '');
+        self::$_connection = new PDO("mysql:host=localhost;dbname=quiz_musical;charset=utf8", 'root', 'root');
         // ::Default : mode par défaut de récupération de données
         // :: données sous forme tableau associatif
         self::$_connection->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);

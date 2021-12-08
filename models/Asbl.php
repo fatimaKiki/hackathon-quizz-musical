@@ -38,22 +38,7 @@ class Asbl extends Connection {
 		$requete = "SELECT * FROM asbl";
 		return $this->execute($requete);
 	}
-	// ajoute un thé
-	public function addAsbl($params)
-	{
-		var_dump($params);
-		
-		try{
-			$requete = "INSERT INTO asbl (numero_entreprise, nom, adresse_rue, adresse_numero, code_postal, commune, telephone, email, mot_de_passe, description ) VALUES (:numero_entreprise, :nom,  :adresse_rue, :adresse_numero, :code_postal, :commune, :telephone, :email, :mot_de_passe, :description)";
-			$id = $this->add($requete, $params);
-			return $id;
-		}
-		catch(PDOException $e){
-			var_dump($e);
-			return false;
-		}
-		
-	}
+
 	// // met à jour un thé
 	// public function updateTea($id, $nom)
 	// {
