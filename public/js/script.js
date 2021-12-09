@@ -17,7 +17,7 @@ const sendAjax = function(url, methode = "POST", data = null) {
       }
       else {
         // Requete en erreur (status code != "2xx")
-        reject(data)
+        reject(data);
       }
     }
   })
@@ -26,8 +26,8 @@ const sendAjax = function(url, methode = "POST", data = null) {
   })
 };
 
-const url = 'http://localhost/exos/hackathon-quizz-musical/index.php?section=resultat';
-// const url = 'http://localhost/exos/hackathon-quizz-musical/?section=resultat';
+// const url = 'http://localhost/interface3/hackathon-quizz-musical/index.php?section=resultat';
+const url = 'http://localhost/interface3/hackathon-quizz-musical/?section=resultat';
 
 
 sendAjax(url, 'POST', {
