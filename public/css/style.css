@@ -137,14 +137,16 @@ h1{
 .blue{
     background-color:#212347;
     text-align: center;
-    border: 2px solid rgb(210, 210, 255);
-    margin-right: 40px;
-    margin-left: 40px;
+    border: 5px solid rgb(210, 210, 255);
+    /* margin-right: 60px;
+    margin-left: 60px; */
+    width: 80%;
+    margin: auto;
 }
 .blue2{
     background-color:#212347;
     text-align: center;
-    border: 2px solid rgb(210, 210, 255);
+    border: 5px solid #90b4db;
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -152,17 +154,45 @@ h1{
 .blue3{
     background-color:#212347;
 
-    border: 2px solid rgb(210, 210, 255);
+    border: 5px solid #90b4db;
     margin-right: 20px;
     margin-left: 20px;
 }
 .namePlayer{
     text-align: center;
-    background-color:rgb(210, 210, 255);
-    border: 2px solid rgb(136, 53, 136);
+    background-color:#dee0ee;
+    border: 5px solid #763bd2;
     width: 30%;
     margin: auto;
     padding: 30px;
+    color: #212347;
+    font-size: 1.3rem;
+    font-weight: bold
+
 }
+.align{
+text-align: center;
 
-
+}
+.form-check .form-check-input{
+    float: none !important;
+    margin-right:20px;
+}
+.score{
+    text-align: center;
+    color:#8b2c8b;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.scoreBlue{
+    text-align: center;
+    color:#90b4db;
+    font-size: 2rem;
+    font-weight: bold;
+}
+#animation_container {
+	position:absolute;
+    
+	left:0;right:0;
+	top:0;bottom:0;
+  }

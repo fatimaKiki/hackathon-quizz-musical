@@ -5,11 +5,8 @@ if (isset($_GET["section"])) {
         case 'accueil':
             include("controller/accueilController.php");
             break;
-        case 'start_game':
+        case 'startGame':
             include("controller/startGameController.php");
-            break;
-        case 'evenements':
-            include("controller/evenementsController.php");
             break;
         case 'erreur':
             include("controller/erreurController.php");
@@ -26,14 +23,8 @@ if (isset($_GET["section"])) {
         case 'accueil_connexion':
             include("controller/accueil_connexionController.php");
             break;
-        case 'form_event':
-            include("controller/form_eventController.php");
-            break;
-        case 'form_agenda':
-            include("controller/form_agendaController.php");
-            break;
-            case 'map':
-                include("controller/mapController.php");
+            case 'introStartGame':
+                include("controller/introStartGameController.php");
                 break;
         default:
             include("views/error/404");
