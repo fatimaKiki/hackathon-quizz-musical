@@ -6,7 +6,6 @@ if (isset($_GET["section"])) {
     if (isset($_SESSION['id'])){
     // joueur est connecté et un profil ok
         switch ($_GET["section"]) {
-
             case 'startGame':
                 include("controller/startGameController.php");
                 break;

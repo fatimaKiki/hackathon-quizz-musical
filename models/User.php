@@ -15,7 +15,8 @@
             try {
                 $requete = "SELECT * FROM joueur WHERE nom = :nom";
                 $params = array(
-                    ":nom" => $nom
+                    ":nom" => $nom,
+                
                 );
 
                 if($this->execute($requete, $params)!= null){
@@ -23,7 +24,9 @@
                     // var_dump($data);
                     // var_dump('Utilisateur is ok');
                     $arrayData = array(
-                        "nom" => $data["nom"]);
+                        "nom" => $data["nom"],
+                        "id" => $data["id"],
+                    );
                     return $arrayData;
                     }
 				else {
@@ -81,7 +84,7 @@
                 $data = $this->execute($requete, $params);
 
 
-                if ($data != null && sizeof($data) == 1) {
+                if ($data != null && sizeof($data) >= 1) { /* forcément il fallait que ce soit égal ou sup à 1 pour éviter es doublons */
                     //var_dump("le compte existe");
                     return false;
                 }

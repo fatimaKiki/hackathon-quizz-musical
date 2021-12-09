@@ -1,18 +1,30 @@
 <?php
 include("models/User.php");
 
+
+// si la variable de session count n'existe pas
+if (!isset($_SESSION["count"])) {
+    // alors la créer et initialiser à 0
+    $_SESSION["count"] = 0;
+}
+
 $msg = "";
+
+// si le form est soumis (une variable post nom)
 if (isset($_POST["nom"])) {
-    // var_dump("couco");
+
+    var_dump("nom bien rempli et devrait normalement executé la fonction de vérification des doublons");
     $connexionUser = new User();
 
-    //vérifie que les connections (email, pseudo et mdp) existe déjà ou pas dans la db en passant par un tableau nommé $data
+    //vérifie que les connections (nom et id) existent déjà ou pas dans la db en passant par un tableau nommé $data
     $userComparaison = $connexionUser->verify(htmlspecialchars($_POST['nom']));
 
     if ($userComparaison != null) {
+        var_dump('function verify good');
 
         // enregistrer dans une variable de session
-        $_SESSION["user"] = $userComparaison["nom"];
+        $_SESSION["nom"] = $userComparaison["nom"];
+        $_SESSION["id"] = $userComparaison["id"];
         // var_dump($_SESSION["user"]);
 
          // incrémente la variable de session
