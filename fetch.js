@@ -24,14 +24,42 @@ console.log(sing)
 
 async function getLyrics(sing) {
 
-    const lyrics = await fetch('https://api.lyrics.ovh/v1/' + sing.artist + '/' + sing.title)
-    // .then(response => response.text())
-    // .then(data => {
-    //     return data.lyrics
-    // })
-    let data = await lyrics.json();
-    let lyricsSpan = document.querySelector('.lyrics')
-    lyricsSpan.innerText = data.lyrics;
+    const song1 = await fetch('https://api.lyrics.ovh/v1/' + sing.artist + '/' + sing.title)
+        .then(response => {
+            return response.json()
+        })
+        .then(function (text) {
+            lyricsSpan.textContent = text.lyrics;
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+
+    const song2 = await fetch('https://api.lyrics.ovh/v1/' + sing.artist + '/' + sing.title)
+        .then(response => {
+            return response.json()
+        })
+        .then(function (text) {
+            lyricsSpan.textContent = text.lyrics;
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+
+
+    const song3 = await fetch('https://api.lyrics.ovh/v1/' + sing.artist + '/' + sing.title)
+        .then(response => {
+            return response.json()
+        })
+        .then(function (text) {
+            lyricsSpan.textContent = text.lyrics;
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+
+    const songsChooce = Promise.all([song1, song2, song3]);
+    console.log(songsChooce)
 
 }
 
