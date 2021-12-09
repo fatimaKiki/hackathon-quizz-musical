@@ -1,30 +1,32 @@
-<?php 
-    $msgResultatScore = "";
-   
-    
-    $score = $scorePlayer->addScore(1,3);
+<?php
 
-    var_dump("le resultat est bien inscrit dans la db");
+include("models/User.php");
+$scorePlayer = new User();
+$msgResultatScore = "";
 
-    $msgResultatScore = $score;
-    
-    
-    if (isset($_POST["id"])&& ($_POST["score"])){
-        
-       // var_dump($_POST["score"]);
-    // var_dump($_POST["id"]);
-        
-        $scorePlayer = new User();
 
-       /*  $score = $scorePlayer->addScore($_POST["id"],$_POST["score"]); */
-        $msgResultatScore = $_POST["score"];
+/* $score = $scorePlayer->addScore(9, 5);
+var_dump("le resultat est bien inscrit dans la db");
+ */
 
-        header("Location:?section=resultat");
-    }
-  
 
-    include("views/page/resultat.php");
-    
+
+if (isset($_POST["id"]) && ($_POST["score"])) {
+
+    var_dump($_POST["score"]);
+    var_dump($_POST["id"]);
+
+    $score1 = $scorePlayer->addScore($_POST["id"],$_POST["score"]); 
+
+
+    $msgResultatScore = "<p> le score est ". $score ."</p>";
+
+    header("Location:?section=resultat");
+}
+
+
+include("views/page/resultat.php");
+
 ?>
 
 <!-- page des résultats du joueur - personne est connecté -->

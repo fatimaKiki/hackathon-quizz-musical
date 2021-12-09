@@ -25,6 +25,6 @@ const sendAjax = function(url, methode = "POST", data = null) {
    }
    const url = 'http://localhost/exos/hackathon-quizz-musical/index.php?section=resultat';
   sendAjax(url, 'POST', {
-    id: 8,
+    id: 5,
     score: 3,
   })

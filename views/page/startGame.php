@@ -3,4 +3,4 @@
 ?>
 <h3>Start Game</h3>
 
-<a href="?section=resultat">resultat</a>
+<a href="?section=resultat">Afficher les résultat</a>
