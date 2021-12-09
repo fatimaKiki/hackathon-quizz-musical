@@ -1,3 +1,4 @@
+@import url(https://fr.allfont.net/allfont.css?fonts=impact);
 .bg{
     background-image: url(../images/bg.png);
     position: absolute;
@@ -41,9 +42,13 @@ a>img.logoImg {
 
 }
     
- 
+.btnInscription{
+    background-image: linear-gradient(to right, #a78f3a 0%, #E1F5C4  41%, #EDE574  100%);
+    padding: 10px;
 
-.button1,.button2 {
+}
+
+.button1,.button2,.btnInscription{
    text-align: center;
    text-transform: uppercase;
    transition: 0.5s;
@@ -54,13 +59,18 @@ a>img.logoImg {
    font-weight: bold;
  }
 
- .button1:hover,.button2:hover {
+ .button1:hover,.button2:hover{
    background-position: right center; /* change the direction of the change here */
-   color: #a78f3a;
+   color: #212347;
    text-decoration: none;
    font-weight: bold;
  }
-    
+.btnInscription:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #212347;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
     
 
@@ -92,6 +102,35 @@ a.connexion:hover{
     color:#a78f3a;
     font-weight: bold;
 }
+.form_inscription{
+    position: absolute;
+    /* border-color: 2px solid #E1F5C4; */
+    /* border:2px solid #81adf0; */
+    top:30%;
+    left: 37%;
+    background-color:rgba(47, 85, 166, 0.5);
+    min-width: 25%;
+    padding: 70px;
+    
+}
+.form_inscription input {
+    border:none;
+    border-bottom:2px solid #d4edff;
+    background-color:transparent;
+    color: white;
+    text-align: center;
+}
+
+h1{
+    font-family: Impact;
+    color:#a78f3a;
+}
+.labelName{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d4edff;
+}
+
 
 
 

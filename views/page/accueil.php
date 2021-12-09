@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col ">
             <div id="divTitle">
-                <img class="titleHomePage" src="public/images/title.png" alt="">
+                <img class="titleHomePage" src="public/images/title2.png" alt="">
             </div>
         </div>
     </div>

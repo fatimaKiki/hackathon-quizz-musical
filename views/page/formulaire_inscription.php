@@ -1,13 +1,11 @@
-<div class="container-fluid bg bigMarginTest">
-    <h2>Formulaire d'inscription</h2>
-
-    <div class="row">
-        <div class="col ">
-            <form action="#" method="post">
-                <input type="text" name="nom">
-                <label for="nom">Player1</label>
-
-                <input type="submit" value="Inscription">
+<div class="container-fluid bg">
+    <div class="row bgBlue">
+        <div class="col">
+            <form action="#" method="post" class=" form_inscription text-center">
+                <h1 class="text-center pb-2">S'inscrire</h1>
+            <label class="d-block labelName pb-3" for="nom">Nom de joueur</label>
+            <input type="text" name="nom" class="mt-3" placeholder="Saisissez votre nom">
+                <button class="d-block m-auto mt-5 btnInscription" type="submit" >Inscription</button> 
             </form>
         </div>
     </div>
