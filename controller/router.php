@@ -15,6 +15,9 @@ if (isset($_GET["section"])) {
             case 'accueil_connexion':
                 include("controller/accueil_connexionController.php");
                 break;
+            case 'resultat':
+                include("controller/resultatController.php");
+                break;
             default:
                 include("views/error/404.php");
                 break;
