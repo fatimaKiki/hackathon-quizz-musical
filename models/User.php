@@ -4,7 +4,9 @@
     // echo password_hash('admin', PASSWORD_DEFAULT);
 
     class User extends Connection {
-        // ============ CONNEXION =========
+
+
+// ============ CONNEXION =========
         // retourne l'utilisateur si il existe
         public function verify($nom) {
             if (empty($nom)) {
@@ -33,7 +35,10 @@
                 return false;
             }
         }
-	// ajoute un thé
+
+
+
+// ============ AJOUTER UN JOUEUR=========
 	public function addPlayer($params)
 	{
 		var_dump($params);
@@ -47,10 +52,82 @@
 			var_dump($e);
 			return false;
 		}
+
+        $requete = "SELECT LAST_INSERT_ID() as id";
+
+            if ($this->execute($requete) != null) {
+                return $this->execute($requete, $params)[0]["id"];
+            } // [0] la première ligne de notre requête de notre BD
+            //retourne la premièrte ligne de mon tbaleau
+
+            else {
+                throw new Exception("Soucis lors de la création de l'user");
+            }
 		
 	}
 
 
+// ============ INSCRIPTION=========
+        // retourne si le compte n'existe pas
 
-    }
+        public function joueurNotExist($nom)
+        {
+            try {
+                $requete = "SELECT * FROM joueur WHERE nom = :nom";
+                $params = array(
+                    ":nom" => $nom,
+                );
+
+                $data = $this->execute($requete, $params);
+
+
+                if ($data != null && sizeof($data) == 1) {
+                    //var_dump("le compte existe");
+                    return false;
+                }
+                return true;
+            } catch (PDOException $e) {
+               //var_dump($e);
+                return true;
+            }
+        }
+    
+
+
+// ============ GET JOUEUR=========
+        public function getJoueur($id)
+        {
+
+            try {
+                $requete = "SELECT * FROM joueur WHERE id = :id"; //injection SQL on rajoute un alias // sécuriser
+                $params = array(
+                    ":id" => $id
+                );
+
+                if ($this->execute($requete, $params) != null) {
+                    return $this->execute($requete, $params)[0];
+                } // [0] la première ligne de notre requête de notre BD
+                //retourne la premièrte ligne de mon tbaleau
+
+                else {
+                    throw new Exception("Pas de donnée");
+                }
+                return null;
+            } catch (Exception $e) {
+                /* var_dump($e); */
+                die();
+
+                return null;
+            }
+        }
+
+
+
+
+
+
+
+
+
+   /* accolade globale : NE PAS SUPPRIMER */ }
 ?>

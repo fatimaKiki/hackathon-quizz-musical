@@ -1,4 +1,4 @@
 <?php 
     var_dump("yolo2");
 ?>
-<h3>je suis une erreur</h3>
+<h3>Start Game</h3>
