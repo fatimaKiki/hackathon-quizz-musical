@@ -1,24 +1,27 @@
 <?php 
     $msgResultatScore = "";
+   
+    
+    $score = $scorePlayer->addScore(1,3);
 
-    if (isset($_POST["nom"])){
+    var_dump("le resultat est bien inscrit dans la db");
+
+    $msgResultatScore = $score;
+    
+    
+    if (isset($_POST["id"])&& ($_POST["score"])){
+        
+       // var_dump($_POST["score"]);
+    // var_dump($_POST["id"]);
+        
         $scorePlayer = new User();
 
-        $score = $scorePlayer->addScore($_POST["nom"]);
+       /*  $score = $scorePlayer->addScore($_POST["id"],$_POST["score"]); */
+        $msgResultatScore = $_POST["score"];
 
-        if ($score != null) {
-
-        }
-
+        header("Location:?section=resultat");
     }
-
-
-   
-
-
-
-
-
+  
 
     include("views/page/resultat.php");
     

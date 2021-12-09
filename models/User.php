@@ -125,37 +125,19 @@
         }
 
         // ============ AJOUTER UN SCORE =========
-	public function addScore($params)
-	{
-		var_dump($params);
-		
-		try{
-			$requete = "INSERT INTO joueur (score) VALUES (:score)";
-			$id = $this->add($requete, $params);
-			return $id;
-		}
-		catch(PDOException $e){
-			var_dump($e);
-			return false;
-		}
+        public function addScore($id, $score){
 
-        // $requete = "SELECT LAST_INSERT_ID() as id";
+            $requete = "UPDATE joueur SET score = :score WHERE id = :id";
+            $params = array(
+            ":id"=>$id,
+            ":score"=> $score,
+            );
+            
+            $this->execute($requete, $params);
+            
+            }
 
-        //     if ($this->execute($requete) != null) {
-        //         return $this->execute($requete, $params)[0]["id"];
-        //     } // [0] la première ligne de notre requête de notre BD
-        //     //retourne la premièrte ligne de mon tbaleau
-
-        //     else {
-        //         throw new Exception("Soucis lors de la création de l'user");
-        //     }
-		
-	}
-
-
-
-
-
+        
 
 
 
