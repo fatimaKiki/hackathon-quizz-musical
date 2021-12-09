@@ -6,7 +6,7 @@ if (isset($_SESSION)) {
     
 }
 
-var_dump($_SESSION["id"]);
+// var_dump($_SESSION["id"]);
 
 // inclure le head
 include("views/html/head.php");

@@ -1,0 +1,96 @@
+.bg{
+    background-image: url(../images/bg.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size:cover;
+    background-repeat:no-repeat;
+    height: 100%;
+    width: 100%;
+}
+a>img.logoImg {
+    width: 30%;
+}
+/* #divTitle{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.titleHomePage{
+    width: 50%;
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    /* -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+}
+.button1{
+    width: 18%;
+    position: absolute;
+    top:70%;
+    left: 32%;
+    height: 50px;
+    
+    background-image: linear-gradient(to right, #a78f3a 0%, #E1F5C4  41%, #EDE574  100%);
+
+}
+    
+ 
+
+.button1,.button2 {
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   display: block;
+   font-weight: bold;
+ }
+
+ .button1:hover,.button2:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #a78f3a;
+   text-decoration: none;
+   font-weight: bold;
+ }
+    
+
+    
+
+.button2{
+    width: 18%;
+    position: absolute;
+    top:70%;
+    left: 51%;
+    height: 50px;
+    background-image: linear-gradient(to right, #a78f3a 0%, #E1F5C4  40%, #EDE574  100%);
+}
+.end{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.connexion{
+    background-color:#a78f3a;
+    padding: 15px;
+    font-size: 1.2rem;
+    color: white;
+}
+a.connexion{
+    text-decoration: none;
+}
+a.connexion:hover{
+    background-color:transparent;
+    border: 2px solid #a78f3a;
+    color:#a78f3a;
+    font-weight: bold;
+}
+
+
