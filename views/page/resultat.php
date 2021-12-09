@@ -3,5 +3,5 @@
 <div><!-- TODO à mettre avec du joli css please -->
 <?= $msgResultatScore ; ?>
 
-<script src="public/js/test.js"></script>
+<script src="public/js/script.js"></script>
 </div>
