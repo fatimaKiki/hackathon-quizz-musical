@@ -5,8 +5,8 @@ if (isset($_GET["section"])) {
         case 'accueil':
             include("controller/accueilController.php");
             break;
-        case 'reseau':
-            include("controller/reseauController.php");
+        case 'start_game':
+            include("controller/startGameController.php");
             break;
         case 'evenements':
             include("controller/evenementsController.php");

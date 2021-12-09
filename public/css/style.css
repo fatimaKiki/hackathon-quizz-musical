@@ -130,6 +130,39 @@ h1{
     font-weight: bold;
     color: #d4edff;
 }
+.logoStartGame{
+    width: 60%;
+    transform: rotate(20deg);
+}
+.blue{
+    background-color:#212347;
+    text-align: center;
+    border: 2px solid rgb(210, 210, 255);
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.blue2{
+    background-color:#212347;
+    text-align: center;
+    border: 2px solid rgb(210, 210, 255);
+    margin-right: 20px;
+    margin-left: 20px;
+}
 
+.blue3{
+    background-color:#212347;
+
+    border: 2px solid rgb(210, 210, 255);
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.namePlayer{
+    text-align: center;
+    background-color:rgb(210, 210, 255);
+    border: 2px solid rgb(136, 53, 136);
+    width: 30%;
+    margin: auto;
+    padding: 30px;
+}
 
 
