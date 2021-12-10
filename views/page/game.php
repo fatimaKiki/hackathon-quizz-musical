@@ -10,7 +10,7 @@
 <!-- Player -->
 <div style="background: lightgrey; width: 40rem; display: flex; justify-content: space-around;">
 <p style="margin-inline: 1.5rem;">Player <span id="player-id"></span></p>
-<p>Score : <span id="score">0</span></p>
+<p>Score : <span id="score"Input>0</span></p>
 </div> 
 
 <!-- Song -->
@@ -46,11 +46,11 @@
     method="post"
     id="game-form">
     <div id="hidden-inputs" hidden>
-        <input type="score" name="score" id="score" placeholder="score" value="10">
-        <input type="playerId" name="playerId" id="playerId" placeholder="playerId" value="8">
-        <button type="submit">Fake end Game</button>
+        <input type="score" name="score" id="scoreInput" placeholder="score">
+        <!-- <input type="playerId" name="playerId" id="playerInput" placeholder="playerId"> -->
+        <!-- <button type="submit">Fake end Game</button> -->
     </div>
-    <button id="end-with-js" type="submit" hidden>End game with JS</button>
+    <!-- <button id="end-with-js" type="submit" hidden>End game with JS</button> -->
 </form>
 <script src="public/js/songsData.js"></script>
 <script src="public/js/gameState.js"></script>

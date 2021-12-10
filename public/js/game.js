@@ -23,12 +23,6 @@ const playGame = () => {
                                               .then((lyricsObj) => {
                           
                           SONGS[urlId] = { title: urlData.title, artist: urlData.artist, lyrics: lyricsObj.lyrics };
-                          // SONGS = [
-                          //   { title: urlDataList[urlId].title, artist: urlDataList[urlId].artist, lyrics: lyricsObj.lyrics },
-                          //   // { title: 'Fake 1', artist: '1 Boys', lyrics: lyricsObj.lyrics },
-                          //   // { title: 'Fake 2', artist: '2 Boys', lyrics: lyricsObj.lyrics },
-                          // ];
-
 
                           gameState = Object.assign(gameState, { score: 0, playerId:  4});
                           _playerId.innerText = gameState.playerId;
@@ -48,6 +42,11 @@ const playGame = () => {
   });
 
 }
+
+// const _gameForm = document.getElementById('game-form');
+  // _endGameFakeBtn.addEventListener('click', function(e) {
+
+    // console.log('Game Form :::', _gameForm);
 
 console.log('SONGSSS:::', SONGS);
 CURRENT_SONG = SONGS[0];
