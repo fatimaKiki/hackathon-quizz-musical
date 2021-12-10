@@ -70,12 +70,12 @@ const listenToAnswers = () => {
                 console.log(gameState.score);
                 _score.innerText = gameState.score;
 
-                _result.style.background = 'lightgreen';
+                _result.style.background = 'lightgreen'; //TODO: replace with CSS CLASS
                 _result.innerText = 'Well Done!';
                 _result.removeAttribute('hidden');
               } 
               else {
-                _result.style.background= 'tomato';
+                _result.style.background= 'tomato'; //TODO: replace with CSS CLASS
                 _result.innerText = 'Too Bad !';
                 _result.removeAttribute('hidden');
               }
