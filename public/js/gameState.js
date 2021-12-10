@@ -10,4 +10,4 @@ var gameState = {
 };
 
 var CURRENT_SONG;
-var SONGS;
+const SONGS = [];

@@ -14,25 +14,21 @@ const _title = document.getElementById('title');
 const _radioInputs = document.querySelectorAll('input[type="radio"]');
 const _result = document.getElementById('result');
 
-
-
 const playGame = () => {
-  console.log('hello');
-  const lyrics0 = fetch(urls[0])
-  // .then(response => response.text())
-            .then(data => {
-            // console.log('LYRICS ::', data.text());
-              data.json()
-                  .then((v) => {
-                          // console.log('V ::', v);  
-                          
-                          SONGS = [
-                            { title: 'All I Have To Give', artist: 'Backstreet Boys', lyrics: v.lyrics },
-                            { title: 'Fake 1', artist: '1 Boys', lyrics: v.lyrics },
-                            { title: 'Fake 2', artist: '2 Boys', lyrics: v.lyrics },
-                          ];
 
-                          CURRENT_SONG = SONGS[0];
+  urlDataList.forEach((urlData, urlId) => {
+    fetch(urlDataList[urlId].url)
+                      .then((response) => {
+                                      response.json()
+                                              .then((lyricsObj) => {
+                          
+                          SONGS[urlId] = { title: urlData.title, artist: urlData.artist, lyrics: lyricsObj.lyrics };
+                          // SONGS = [
+                          //   { title: urlDataList[urlId].title, artist: urlDataList[urlId].artist, lyrics: lyricsObj.lyrics },
+                          //   // { title: 'Fake 1', artist: '1 Boys', lyrics: lyricsObj.lyrics },
+                          //   // { title: 'Fake 2', artist: '2 Boys', lyrics: lyricsObj.lyrics },
+                          // ];
+
 
                           gameState = Object.assign(gameState, { score: 0, playerId:  4});
                           _playerId.innerText = gameState.playerId;
@@ -48,5 +44,13 @@ const playGame = () => {
                   });
 
             });
-          };
+          
+  });
+
+}
+
+console.log('SONGSSS:::', SONGS);
+CURRENT_SONG = SONGS[0];
+
+
 playGame();

@@ -105,9 +105,13 @@ function makeRandomUniqueIds(range, outputLength) {
 
 const listRandIdsSongData = makeRandomUniqueIds(songsDataForApi.length, 3);
 
-const urls = listRandIdsSongData.map((rid) => {
+const urlDataList = listRandIdsSongData.map((rid) => {
   let songUrl = makeUrlForApi(songsDataForApi[rid]);
-  return songUrl;
+  return { 
+    url: songUrl, 
+    title: songsDataForApi[rid].title, 
+    artist: songsDataForApi[rid].artist,
+  };
 });
 
 // const urls = [
@@ -116,4 +120,4 @@ const urls = listRandIdsSongData.map((rid) => {
 //   makeUrlForApi(songsDataForApi[2]),
 // ];
 
-console.log('Urls :::', urls);
+// console.log('Urls :::', urlDataList);
