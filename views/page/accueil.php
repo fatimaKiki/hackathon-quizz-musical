@@ -10,6 +10,9 @@
         <div class="col-6 ">
         <a href="?section=formulaire_inscription"><button class="button1">S'inscrire</button></a>
         <a href="?section=connexion"><button class="button2">Se connecter</button></a>
+
+
+        <a href="https://usecheck.com/" class="btn-shine" target="_blank">Get early access</a>
     </div>
     </div>
 </div>
