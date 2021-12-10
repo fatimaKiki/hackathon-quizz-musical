@@ -47,14 +47,15 @@
     method="post"
     id="game-form">
     <div id="hidden-inputs" hidden>
-        <!-- <label for="score"></label> -->
-        <input type="score" name="score" id="score" placeholder="score" value="96">
-        <input type="playerId" name="playerId" id="playerId" placeholder="playerId" value="7">
+        <input type="score" name="score" id="score" placeholder="score" value="10">
+        <input type="playerId" name="playerId" id="playerId" placeholder="playerId" value="8">
         <button type="submit">Fake end Game</button>
-        <!-- TODO: replace this form by JS form.submit() -->
     </div>
-        <button id="end-with-js" type="submit">End game with JS</button>
+    <button id="end-with-js" type="submit">End game with JS</button>
 </form>
+<script src="public/js/songsData.js"></script>
+<script src="public/js/gameState.js"></script>
+<script src="public/js/gameUtils.js"></script>
 <script src="public/js/game.js"></script>
 
 <!-- <a href="?section=resultat">End Game</a> -->

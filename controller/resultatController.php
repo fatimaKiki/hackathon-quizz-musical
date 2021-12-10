@@ -27,7 +27,7 @@ var_dump($_SESSION['score']);
 // }
 
 
-// // include("views/page/resultat.php");
+include("views/page/resultat.php");
 
 ?>
 
