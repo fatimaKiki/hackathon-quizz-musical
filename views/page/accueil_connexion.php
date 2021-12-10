@@ -4,4 +4,5 @@
         <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1024px; height:768px; position: absolute; left: 0px; top: 0px; display: block;">
         </div>
     </div>
+    <a class="" href="?section=introStartGame"><button class="centre button1">Continuer</button></a>
 </div>
