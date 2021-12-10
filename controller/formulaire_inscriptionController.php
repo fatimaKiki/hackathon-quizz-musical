@@ -37,7 +37,7 @@ if (isset($_POST["nom"])) {
 
             if ($last_insert_id != false) {
                 // rediriger vers la page pour commencer le jeu
-                header("Location:?section=introStartGame");
+                header("Location:?section=accueil_connexion");
 
                 var_dump("je suis là ou je devrait etre");
             }
