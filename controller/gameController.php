@@ -7,7 +7,7 @@
         // $user = $connexionUser->verify(htmlspecialchars($_POST['score']));
         var_dump($_POST['score']);
         // if($user != false){
-            // $_SESSION["score"] = $_POST["score"];
+        $_SESSION["score"] = $_POST["score"];
             // $_SESSION["email"] = $_POST["email"];
             // $_SESSION["username"] = $user["firstname"];
             $score = $player->addScore($_POST["playerId"], $_POST["score"]); 
