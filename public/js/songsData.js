@@ -103,9 +103,9 @@ function makeRandomUniqueIds(range, outputLength) {
   return randomIds;
 }
 
-const xxxxxList = makeRandomUniqueIds(songsDataForApi.length, 3);
+const listRandIdsSongData = makeRandomUniqueIds(songsDataForApi.length, 3);
 
-const urls = xxxxxList.map((rid) => {
+const urls = listRandIdsSongData.map((rid) => {
   let songUrl = makeUrlForApi(songsDataForApi[rid]);
   return songUrl;
 });
