@@ -32,7 +32,7 @@ const playGame = () => {
                           setTimeout(() => {
                             console.log('Times Up ! Now choose...');
                             makeAndDisplayAnswers(correctAnswer, tokenizeLyrics(CURRENT_SONG.lyrics));
-                            listenToAnswers();
+                           /*   listenToAnswers(); a enlever ca si jamais parce que ca fait beuguer deès que l'on fait une fausse eurreur */
                           }, 3000);
     
                   });
@@ -53,3 +53,4 @@ CURRENT_SONG = SONGS[0];
 
 
 playGame();
+listenToAnswers();
