@@ -10,7 +10,7 @@
 <!-- Player -->
 <div style="background: lightgrey; width: 40rem; display: flex; justify-content: space-around;">
 <p style="margin-inline: 1.5rem;">Player <span id="player-id"></span></p>
-<p>Score : <span id="score"Input>0</span></p>
+<p>Score : <span id="score">0</span></p>
 </div> 
 
 <!-- Song -->
