@@ -1,31 +1,33 @@
 <?php
 
-include("models/User.php");
-$scorePlayer = new User();
-$msgResultatScore = "";
+// include("models/User.php");
+// $player = new User();
+// $msgResultatScore = "";
 
 
-/* $score = $scorePlayer->addScore(9, 5);
-var_dump("le resultat est bien inscrit dans la db");
- */
+// /* $score = $player->addScore(9, 5);
+// var_dump("le resultat est bien inscrit dans la db");
+//  */
+
+var_dump($_SESSION['score']);
+
+// if (isset($_POST["playerId"]) && ($_POST["score"])) {
+
+//     var_dump($_POST["score"]);
+//     var_dump($_POST["playerId"]);
+
+//     $score = $player->addScore($_POST["playerId"], $_POST["score"]); 
+
+//     $_SESSION['score'] = $score;
+
+//     $msgResultatScore = "<p> le score est ". $score ."</p>";
+
+//     header("Location:?section=resultat");
+//     // include("views/page/resultat.php");
+// }
 
 
-
-if (isset($_POST["id"]) && ($_POST["score"])) {
-
-    var_dump($_POST["score"]);
-    var_dump($_POST["id"]);
-
-    $score1 = $scorePlayer->addScore($_POST["id"],$_POST["score"]); 
-
-
-    $msgResultatScore = "<p> le score est ". $score ."</p>";
-
-    header("Location:?section=resultat");
-}
-
-
-include("views/page/resultat.php");
+// // include("views/page/resultat.php");
 
 ?>
 

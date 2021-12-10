@@ -9,8 +9,8 @@ if (isset($_GET["section"])) {
             case 'introStartGame':
                 include("controller/introStartGameController.php");
                 break;
-            case 'startGame':
-                include("controller/startGameController.php");
+            case 'game':
+                include("controller/gameController.php");
                 break;
             case 'deconnexion':
                 include("controller/deconnexionController.php");

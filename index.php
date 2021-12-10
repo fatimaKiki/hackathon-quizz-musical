@@ -6,6 +6,9 @@ if (isset($_SESSION)) {
     
 }
 
+
+// var_dump($_SESSION['score']);
+
 // var_dump($_SESSION["id"]); /* a activer si on veut voir le nombre de personne inscripte dans la db */
 
 // inclure le head
