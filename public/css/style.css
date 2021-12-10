@@ -125,14 +125,135 @@ h1{
     font-family: Impact;
     color:#a78f3a;
 }
+h4{
+    font-family: Impact;
+    color:#d4edff;
+}
 .labelName{
     font-size: 1.5rem;
     font-weight: bold;
     color: #d4edff;
 }
+/* ////////////////startGame//////////////////////////// */
+.blue{
+    background-color:#212347;
+    text-align: center;
+    border: 2px solid rgb(210, 210, 255);
+    margin-right: 40px;
+    margin-left: 40px;
+    border: 5px solid rgb(210, 210, 255);
+    /* margin-right: 60px;
+    margin-left: 60px; */
+    width: 80%;
+    margin: auto;
+}
+.blue2{
+    background-color:#212347;
+    text-align: center;
+    border: 2px solid rgb(210, 210, 255);
+    border: 5px solid #90b4db;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.blue3{
+    background-color:#212347;
+
+    border: 2px solid rgb(210, 210, 255);
+    border: 5px solid #90b4db;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.logoStartGame{
+    width: 60%;
+    transform: rotate(20deg);
+}
+.namePlayer{
+    text-align: center;
+    background-color:rgb(210, 210, 255);
+    border: 2px solid rgb(136, 53, 136);
+    background-color:#dee0ee;
+    border: 5px solid #763bd2;
+    width: 30%;
+    margin: auto;
+    padding: 30px;
+    color: #212347;
+    font-size: 1.3rem;
+    font-weight: bold
+}
+    
+
+.align{
+text-align: center;
+margin-right: auto;
+margin-left: auto;
+}
+.form-check .form-check-input{
+    float: none !important;
+    margin-right:20px;
+}
+.score{
+    text-align: center;
+    color:#8b2c8b;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.scoreBlue{
+    text-align: center;
+    color:#90b4db;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#animation_container {
+	position:absolute;
+    
+	left:0;right:0;
+	top:0;bottom:0;
+	
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #animation_container2 {
+	
+    margin-left: auto;
+    margin-right: auto;
+  } 
 
 
+  .btn-shine
+  {
+  position: absolute;
+    top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 12px 48px;
+  color: #ffffff;
+  background: linear-gradient(to right, #a78f3a 0%, #E1F5C4  41%, #EDE574  100%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 100px;
+  text-decoration: none;
+  white-space: nowrap;
+}
 
+@keyframes shine{
+  0%
+    {background-position: 0;}
+  60%
+    {background-position: 180px;}
+  100%
+    {background-position: 180px;}
+}
+.playerCss, .scoreCss{
+    color:white;
+    font-size: 1.5rem;
+}
 
 
 
@@ -149,8 +270,23 @@ h1{
 .bigMarginTest{
     margin-top: 50px;
 }
+#lyrics{
+    width: 900px;
+    margin: auto;
+    color:#a78f3a ;
+}
 
-
+#answer-container{
+    margin-right: auto;
+    margin-left: auto;
+    width: 900px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.answer-item{
+margin-right: auto;
+margin-left: auto;
+}
 
 
 /* au-dessus à supprimer */

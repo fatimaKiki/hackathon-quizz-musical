@@ -70,13 +70,16 @@ const listenToAnswers = () => {
                 console.log(gameState.score);
                 _score.innerText = gameState.score;
 
-                _result.style.background = 'lightgreen'; //TODO: replace with CSS CLASS
-                _result.innerText = 'Well Done!';
+                _result.style.color = 'lightgreen';
+                _result.style.fontSize = '35px'; //TODO: replace with CSS CLASS
+                 //TODO: replace with CSS CLASS
+                _result.innerText = 'Bravo !';
                 _result.removeAttribute('hidden');
               } 
               else {
-                _result.style.background= 'tomato'; //TODO: replace with CSS CLASS
-                _result.innerText = 'Too Bad !';
+                _result.style.color= 'tomato'; //TODO: replace with CSS CLASS
+                _result.style.fontSize= '35px';
+                _result.innerText = 'Mauvaise réponse!';
                 _result.removeAttribute('hidden');
               }
           };
