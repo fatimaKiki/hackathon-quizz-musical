@@ -1,25 +1,21 @@
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="authoring-tool" content="Adobe_Animate_CC">
-<link rel="stylesheet" href="public/css/style.css">
-<link rel="stylesheet" href="public/css/bootstrap.css">
-<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-
-<script src="public/js/animAccueil.js"></script>
-<script src="public/js/animStart.js?1639103719728"></script>
-
-
-<!-- ////////////////////////////////anim 1////////////// -->
+<div class="container-fluid bg">
+<div id="animation_container" style=" width:1024px; height:768px">
+		<canvas id="canvas" width="1024" height="768" style="position: absolute; display: block;"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1024px; height:768px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+        <div class="btnStart">
+            <a href="?section=startGame"><img class="btnStartImg" src="public/images/btnStart.png" alt=""></a>
+        </div>
+	</div>
+</div>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
 	canvas = document.getElementById("canvas");
 	anim_container = document.getElementById("animation_container");
 	dom_overlay_container = document.getElementById("dom_overlay_container");
-	var comp=AdobeAn.getComposition("673C74A311F347EDBD16A6EF61D1AE62");
+	var comp=AdobeAn.getComposition("64F4433D4F484E87A926414D200B4B5D");
 	var lib=comp.getLibrary();
-	createjs.MotionGuidePlugin.install();
 	var loader = new createjs.LoadQueue(false);
 	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
 	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
@@ -39,8 +35,9 @@ function handleComplete(evt,comp) {
 	for(i=0; i<ssMetadata.length; i++) {
 		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
 	}
-	exportRoot = new lib.animAccueil();
-	stage = new lib.Stage(canvas);	
+	exportRoot = new lib.animStart();
+	stage = new lib.Stage(canvas);
+	stage.enableMouseOver();	
 	//Registers the "tick" event listener.
 	fnStartAnimation = function() {
 		stage.addChild(exportRoot);
@@ -53,8 +50,4 @@ function handleComplete(evt,comp) {
 	fnStartAnimation();
 }
 </script>
-
-
-</head>
-
-<body onload="init();" style="margin:0px;">
+<!-- <a href="?section=game">Commencer le jeu</a> -->
