@@ -41,7 +41,6 @@
 <!-- Message Well Done / Too Bad -->
 <div id="result"></div>
 
-
 <form
     action="#"
     method="post"
@@ -51,7 +50,7 @@
         <input type="playerId" name="playerId" id="playerId" placeholder="playerId" value="8">
         <button type="submit">Fake end Game</button>
     </div>
-    <button id="end-with-js" type="submit">End game with JS</button>
+    <button id="end-with-js" type="submit" hidden>End game with JS</button>
 </form>
 <script src="public/js/songsData.js"></script>
 <script src="public/js/gameState.js"></script>
