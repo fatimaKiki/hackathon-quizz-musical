@@ -17,5 +17,5 @@
         
     }
     
-    include("views/page/game.php");
+    include("views/page/startGame.php");
 ?>
