@@ -137,6 +137,35 @@
             
             }
 
+
+
+// ============ GET JOUEUR SCORE ET NOM=========
+        public function getAllInfo($id)
+        {
+
+            try {
+                $requete = "SELECT * FROM joueur WHERE id =:id"; //injection SQL on rajoute un alias // sécuriser
+                $params = array(
+                    ":id" => $id,
+                );
+
+                if ($this->execute($requete, $params) != null) {
+                    return $this->execute($requete, $params)[0];
+                } // [0] la première ligne de notre requête de notre BD
+                //retourne la premièrte ligne de mon tbaleau
+
+                else {
+                    throw new Exception("Pas de donnée");
+                }
+                return null;
+            } catch (Exception $e) {
+                /* var_dump($e); */
+                die();
+
+                return null;
+            }
+        }
+
         
 
 
