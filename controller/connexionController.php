@@ -13,19 +13,19 @@ $msg = "";
 // si le form est soumis (une variable post nom)
 if (isset($_POST["nom"])) {
 
-    var_dump("nom bien rempli et devrait normalement executé la fonction de vérification des doublons");
+    //var_dump("nom bien rempli et devrait normalement executé la fonction de vérification des doublons");
     $connexionUser = new User();
 
     //vérifie que les connections (nom et id) existent déjà ou pas dans la db en passant par un tableau nommé $data
     $userComparaison = $connexionUser->verify(htmlspecialchars($_POST['nom']));
 
     if ($userComparaison != null) {
-        var_dump('function verify good');
+        //var_dump('function verify good');
 
         // enregistrer dans une variable de session
         $_SESSION["nom"] = $userComparaison["nom"];
         $_SESSION["id"] = $userComparaison["id"];
-        // var_dump($_SESSION["user"]);
+        // //var_dump($_SESSION["user"]);
 
          // incrémente la variable de session
          $_SESSION["count"] = 1;
