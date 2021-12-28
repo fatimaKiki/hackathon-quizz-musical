@@ -52,7 +52,7 @@
 			return $id;
 		}
 		catch(PDOException $e){
-			var_dump($e);
+			// var_dump($e);
 			return false;
 		}
 

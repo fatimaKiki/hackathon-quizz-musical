@@ -6,7 +6,7 @@
     // if(isset($_POST["score"]) && isset($_POST["playerId"])){
         $player= new User();
         
-        var_dump($_POST['score']);
+        // var_dump($_POST['score']);
         $_SESSION["score"] = $_POST["score"];
         // $_SESSION["id"] = $_POST["playerId"];
 

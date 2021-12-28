@@ -8,6 +8,7 @@
 
 <script src="public/js/animAccueil.js"></script>
 <script src="public/js/animStart.js?1639103719728"></script>
+<script src="public/js/animWinFinal.js"></script>
 
 
 <!-- ////////////////////////////////anim 1////////////// -->
