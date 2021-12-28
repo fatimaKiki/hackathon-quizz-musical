@@ -21,8 +21,8 @@
 
                 if($this->execute($requete, $params)!= null){
                     $data = $this->execute($requete, $params)[0];
-                    // var_dump($data);
-                    // var_dump('Utilisateur is ok');
+                    // //var_dump($data);
+                    // //var_dump('Utilisateur is ok');
                     $arrayData = array(
                         "nom" => $data["nom"],
                         "id" => $data["id"],
@@ -44,7 +44,7 @@
 // ============ AJOUTER UN JOUEUR=========
 	public function addPlayer($params)
 	{
-		var_dump($params);
+		//var_dump($params);
 		
 		try{
 			$requete = "INSERT INTO joueur (nom) VALUES (:nom)";
@@ -85,12 +85,12 @@
 
 
                 if ($data != null && sizeof($data) >= 1) { /* forcément il fallait que ce soit égal ou sup à 1 pour éviter es doublons */
-                    //var_dump("le compte existe");
+                    ////var_dump("le compte existe");
                     return false;
                 }
                 return true;
             } catch (PDOException $e) {
-               //var_dump($e);
+               ////var_dump($e);
                 return true;
             }
         }
@@ -117,7 +117,7 @@
                 }
                 return null;
             } catch (Exception $e) {
-                /* var_dump($e); */
+                /* //var_dump($e); */
                 die();
 
                 return null;
@@ -159,7 +159,7 @@
                 }
                 return null;
             } catch (Exception $e) {
-                /* var_dump($e); */
+                /* //var_dump($e); */
                 die();
 
                 return null;

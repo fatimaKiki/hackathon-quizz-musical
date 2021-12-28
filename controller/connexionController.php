@@ -25,6 +25,7 @@ if (isset($_POST["nom"])) {
         // enregistrer dans une variable de session
         $_SESSION["nom"] = $userComparaison["nom"];
         $_SESSION["id"] = $userComparaison["id"];
+        // //var_dump($_SESSION["user"]);
         // var_dump($_SESSION["user"]);
 
          // incrémente la variable de session

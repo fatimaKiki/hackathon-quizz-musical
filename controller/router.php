@@ -2,7 +2,7 @@
 
 if (isset($_GET["section"])) {
 
-    //var_dump($_SESSION);
+    ////var_dump($_SESSION);
     if (isset($_SESSION['id'])){
     // joueur est connecté et un profil ok
         switch ($_GET["section"]) {

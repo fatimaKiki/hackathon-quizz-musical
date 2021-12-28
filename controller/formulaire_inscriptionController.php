@@ -46,15 +46,15 @@ if (isset($_POST["nom"])) {
             $msgErreurInscription = '<p>Ce compte existe déjà. Voulez-vous <a href="?section=connexion">connecter</a>?</p>';/* TODO si possible/temps ne manque pas mettre aussi du css ici. bisous sur vous (Manon) */
         }
 
-        //var_dump($id); /* a activer si on veut voir le nom de personne inscrites dans la db */
+        ////var_dump($id); /* a activer si on veut voir le nom de personne inscrites dans la db */
 
     } else {
         $msgErreurInscription = '<p>Veuillez remplir correctement les champs s\'il vous plaît.</p>';
-        //var_dump('aucun champs');
+        ////var_dump('aucun champs');
     }
 } else {
     $msgErreurInscription = '<p>Veuillez remplir correctement les champs s\'il vous plaît.</p>';
-    //var_dump('aucun champs');
+    ////var_dump('aucun champs');
 }
 
 include("views/page/formulaire_inscription.php");

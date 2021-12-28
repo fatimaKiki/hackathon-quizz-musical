@@ -25,15 +25,15 @@ $msgResultatScore = "<p> le score est ". $player1['score'] ."</p>";
 
 
 // /* $score = $player->addScore(9, 5);
-// var_dump("le resultat est bien inscrit dans la db");
+// //var_dump("le resultat est bien inscrit dans la db");
 //  */
 
-/* var_dump($_SESSION['score']); */
+/* //var_dump($_SESSION['score']); */
 
 // if (isset($_POST["playerId"]) && ($_POST["score"])) {
 
-//     var_dump($_POST["score"]);
-//     var_dump($_POST["playerId"]);
+//     //var_dump($_POST["score"]);
+//     //var_dump($_POST["playerId"]);
 
 //     $score = $player->addScore($_POST["playerId"], $_POST["score"]); 
 
