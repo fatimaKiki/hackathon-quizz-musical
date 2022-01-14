@@ -4,11 +4,12 @@
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1024px; height:768px; position: absolute; left: 0px; top: 0px; display: block;">
 		</div>
 	</div>
-	<div class="btnStart">
+	<!-- <div class="btnStart"> -->
 		<!-- <a href="?section=startGame"><img class="btnStartImg" src="public/images/btnStart.png" alt=""></a> -->
-	</div>
+	<!-- </div> -->
 </div>
-</div>
+
+
 
 <script>
 	var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
@@ -64,5 +65,4 @@
 		fnStartAnimation();
 	}
 </script>
-<script src="public/js/animStart.js"></script>
 <!-- <a href="?section=game">Commencer le jeu</a> -->

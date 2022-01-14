@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="public/css/style.css">
 <link rel="stylesheet" href="public/css/bootstrap.css">
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+<script src="public/js/animStart.js"></script>
 
 <!-- <script src="public/js/animAccueil.js"></script> -->
 
