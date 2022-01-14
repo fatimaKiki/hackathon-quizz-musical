@@ -1,12 +1,13 @@
 <div class="container-fluid bg">
-	<div id="animation_container" style=" width:1024px; height:768px">
-		<canvas id="canvas" width="1024" height="768" style="position: absolute; display: block;"></canvas>
+	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1024px; height:768px">
+		<canvas id="canvas" width="1024" height="768" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1024px; height:768px; position: absolute; left: 0px; top: 0px; display: block;">
 		</div>
-		<div class="btnStart">
-			<a href="?section=startGame"><img class="btnStartImg" src="public/images/btnStart.png" alt=""></a>
-		</div>
 	</div>
+	<div class="btnStart">
+		<!-- <a href="?section=startGame"><img class="btnStartImg" src="public/images/btnStart.png" alt=""></a> -->
+	</div>
+</div>
 </div>
 
 <script>
